@@ -10,11 +10,12 @@ Project Next Milestone Breakdown:
 Developer 1: Linibeth 
 * Design and implement the individual Home/product page using HTML and CSS.
 * Display detailed information about a specific product, including images, descriptions, specifications, and user reviews.
-* Support other group members with the database setup.
+* Support Shayne with the database setup.
 
 Developer 2: Kaiya
 * Enhance navigation and user interactivity using JavaScript.
 * Add functionality to navigation menus and implement user interactions such as adding products to a wishlist or submitting a review.
+* Support Clinton with the API handles.
 
 Developer 3: Shayne
 * Define an API route that handles search requests and captures the search query parameters (name or category).
