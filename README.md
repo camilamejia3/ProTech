@@ -7,7 +7,7 @@ of interest and saving them. The implementation of filters, keywords, or categor
 
 Project Next Milestone Breakdown:
 
-Developer 1: linibeth 
+Developer 1: Linibeth 
 * Design and implement the individual Home/product page using HTML and CSS.
 * Display detailed information about a specific product, including images, descriptions, specifications, and user reviews.
 * Support other group members with the database setup.
