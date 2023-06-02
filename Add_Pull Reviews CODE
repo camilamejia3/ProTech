@@ -1,0 +1,100 @@
+<?php
+
+// **Retrieve and ADD DB INFO**
+
+//Connect to the database
+$host = 'localhost';
+$dbname = '';
+$username = '';
+$password = '';
+
+try {
+    $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} 
+catch(PDOException $e) {
+    die('Database connection failed: ' . $e->getMessage());
+}
+
+//**TEST CODE AND ADD TO GITHUB**
+//Retrieve all reviews
+$app->get('/reviews', function() use ($db) {
+    $query = "SELECT * FROM reviews";
+    $stmt = $db->query($query);
+    $reviews = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    header('Content-Type: application/json');
+    echo json_encode($reviews);
+});
+
+//Retrieve a specific review by ID
+$app->get('/reviews/{id}', function($request) use ($db) {
+    $id = $request->getAttribute('id');
+    $query = "SELECT * FROM reviews WHERE id = :id";
+    $stmt = $db->prepare($query);
+    $stmt->bindParam(':id', $id);
+    $stmt->execute();
+    $review = $stmt->fetch(PDO::FETCH_ASSOC);
+    if ($review) {
+        header('Content-Type: application/json');
+        echo json_encode($review);
+    } else {
+        http_response_code(404);
+        echo json_encode(['error' => 'Review not found']);
+    }
+});
+
+//Create a new review
+$app->post('/reviews', function($request) use ($db) {
+    $data = $request->getParsedBody();
+    $title = $data['title'];
+    $content = $data['content'];
+
+    //Perform validation on the input data if needed
+
+    $query = "INSERT INTO reviews (title, content) VALUES (:title, :content)";
+    $stmt = $db->prepare($query);
+    $stmt->bindParam(':title', $title);
+    $stmt->bindParam(':content', $content);
+    $stmt->execute();
+
+    $reviewId = $db->lastInsertId();
+
+    $response = [
+        'id' => $reviewId,
+        'title' => $title,
+        'content' => $content
+    ];
+    header('Content-Type: application/json');
+    echo json_encode($response);
+});
+
+//Update an existing review
+$app->put('/reviews/{id}', function($request) use ($db) {
+    $id = $request->getAttribute('id');
+    $data = $request->getParsedBody();
+    $title = $data['title'];
+    $content = $data['content'];
+
+    //Perform validation on the input data if needed
+
+    $query = "UPDATE reviews SET title = :title, content = :content WHERE id = :id";
+    $stmt = $db->prepare($query);
+    $stmt->bindParam(':title', $title);
+    $stmt->bindParam(':content', $content);
+    $stmt->bindParam(':id', $id);
+    $stmt->execute();
+
+    $response = [
+        'id' => $id,
+        'title' => $title,
+        'content' => $content
+    ];
+    header('Content-Type: application/json');
+    echo json_encode($response);
+});
+
+// Delete a review
+$app->delete('/reviews/{id}', function($request) use ($db) {
+    $id = $request->getAttribute('id');
+
+    $query = "DELETE FROM
