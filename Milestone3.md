@@ -8,3 +8,9 @@ and display it on the website.
 
 -Set up the necessary links or buttons that direct users to the respective Amazon product pages for purchasing. Use the Amazon product links
 stored in the database to create these links.
+
+Shayne Roberts
+
+-Implement user registration/authentication and login effectively so users can begin to create accounts to shop. 
+
+-Produce and successfully connect php files to fetch and search products logged in the database. Implement search mechanic so products can be filtered.
