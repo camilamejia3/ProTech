@@ -19,5 +19,4 @@ Clinton Miller:
 
   -Implement connectivity for User Verification on the database to record user Authentification upon registration.
   
-Kaiya Suckoo:
-    -  
+ 
