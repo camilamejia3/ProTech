@@ -19,4 +19,8 @@ Clinton Miller:
 
   -Implement connectivity for User Verification on the database to record user Authentification upon registration.
   
- 
+ Kaiya Suckoo:
+  
+   -Add product search functionality: Implement a search feature that allows users to search for products by name, category, or any other relevant criteria. Use PHP and SQL queries to search the database for matching products and display the search results.
+   
+   -Incorporate user reviews and ratings: Create functionality for users to leave reviews and ratings for products.
