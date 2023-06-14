@@ -17,7 +17,7 @@ Shayne Roberts:
 
 Clinton Miller:
 
-  -Implement connectivity for User Verification on the database to record user Authentification upon registration.
+  -Create the users cart page to have selected items populate there prior to final purchase.
   
  Kaiya Suckoo:
   
