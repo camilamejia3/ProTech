@@ -19,17 +19,8 @@ Shayne Roberts:
   
   -Design an account management page with options to edit user information.
   
-  -Enable users to upload and update their profile picture.
-  
-  -Integrate the account management page within the shopping page's user interface.
-  
-  -Implement functionalities to handle user account deletion or deactivation.
-  
-  -Test and debug the entire website, ensuring smooth navigation and functionality.
-  
   -Implement necessary security measures
   
-  -Produce and successfully connect php files to fetch and search products logged in the database. Implement search mechanic so products can be filtered.
 
 
 
