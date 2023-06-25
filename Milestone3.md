@@ -18,7 +18,7 @@ Shayne Roberts:
 
 
 Clinton Miller:
-  -Implement search functionality to allow users to search for a product listed on the ProTech products page from a search Bar
+  -Implement search functionality to allow users to search for a product by name that is stored in the Protech Products table and seperated by Category ID.
 
   
  Kaiya Suckoo: 
