@@ -15,7 +15,7 @@ Shayne Roberts:
   
   -Connect the user registration and login page to the users table in the database.
   
-  -generate a Users Accounnt Management page.
+  -generate a Users Account Management page.
   
   -Test the database connetion.
   
