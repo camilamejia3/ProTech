@@ -11,15 +11,15 @@ Linibeth Mejia:
 
 
 Shayne Roberts:
-  -Implement secure validation and authentication for register and login. 
+  -Implement a register and login funtionality through respective register and login html file. 
   
-  -Connect the user registration and login page to redirect to the shopping page upon successful login.
+  -Connect the user registration and login page to the users table in the database.
   
-  -Implement a logout function to securely end user sessions.
+  -generate a Users Accounnt Management page.
   
-  -Design an account management page with options to edit user information.
+  -Test the database connetion.
   
-  -Implement necessary security measures
+  
   
 
 
