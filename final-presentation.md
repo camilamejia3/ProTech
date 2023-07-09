@@ -12,6 +12,7 @@ Linibeth Mejia:
 
 -Demonstrate how users can read detailed product descriptions and navigate similar product recommendations.
 
+
 Shayne Roberts:
 
 -Connect front end user profile picture storage to back end user database to be featured on shop page
@@ -21,3 +22,24 @@ Shayne Roberts:
 -Implement logut funtion
 
 -Present User Account Usability and functiunality
+
+
+Clinton Miller: 
+
+-Explain the search functionality to find different products.
+
+-Complete the styling when products are being searched and displayed on the website.”
+
+-Ensure the search functionality works across all pages.
+
+
+Kaiya Suckoo 
+
+-Get the reviews displayed on the website 
+
+-Connect the review page back to the website 
+
+-Make the review page design match the website
+
+-Explain how users can leave their own reviews on the website and for the products
+
